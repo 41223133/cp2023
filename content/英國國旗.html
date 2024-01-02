@@ -1,0 +1,489 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cmsite</title>
+        <meta charset="utf-8">
+<meta property="head" content="H2">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushMojo.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>41223133</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">41223133</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">SMap</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='W5.html'>W5</a><ul class='dropdown'><li><a href='曲線圖.html'>曲線圖</a></li></ul><li><a href='W6.html'>W6</a><li class='has-children'><a href='W12.html'>W12</a><ul class='dropdown'><li><a href='GD圖.html'>GD圖</a></li></ul><li><a href='W13.html'>W13</a><li class='has-children'><a href='homework.html'>homework</a><ul class='dropdown'><li><a href='台灣國旗.html'>台灣國旗</a><li><a href='美國國旗.html'>美國國旗</a><li><a href='日本國旗.html'>日本國旗</a><li><a href='中國國旗.html'>中國國旗</a><li><a href='英國國旗.html'>英國國旗</a><li><a href='韓國國旗.html'>韓國國旗</a></li></ul><li><a href='Brython.html'>Brython</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">中國國旗 << <a href='中國國旗.html'>Previous</a> <a href='韓國國旗.html'>Next</a> >> 韓國國旗<br /><h1>英國國旗</h1>
+<div>
+<div class="syntaxhighlighter cpp" id="highlighter_241163">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+<div class="line number11 index10 alt2">11</div>
+<div class="line number12 index11 alt1">12</div>
+<div class="line number13 index12 alt2">13</div>
+<div class="line number14 index13 alt1">14</div>
+<div class="line number15 index14 alt2">15</div>
+<div class="line number16 index15 alt1">16</div>
+<div class="line number17 index16 alt2">17</div>
+<div class="line number18 index17 alt1">18</div>
+<div class="line number19 index18 alt2">19</div>
+<div class="line number20 index19 alt1">20</div>
+<div class="line number21 index20 alt2">21</div>
+<div class="line number22 index21 alt1">22</div>
+<div class="line number23 index22 alt2">23</div>
+<div class="line number24 index23 alt1">24</div>
+<div class="line number25 index24 alt2">25</div>
+<div class="line number26 index25 alt1">26</div>
+<div class="line number27 index26 alt2">27</div>
+<div class="line number28 index27 alt1">28</div>
+<div class="line number29 index28 alt2">29</div>
+<div class="line number30 index29 alt1">30</div>
+<div class="line number31 index30 alt2">31</div>
+<div class="line number32 index31 alt1">32</div>
+<div class="line number33 index32 alt2">33</div>
+<div class="line number34 index33 alt1">34</div>
+<div class="line number35 index34 alt2">35</div>
+<div class="line number36 index35 alt1">36</div>
+<div class="line number37 index36 alt2">37</div>
+<div class="line number38 index37 alt1">38</div>
+<div class="line number39 index38 alt2">39</div>
+<div class="line number40 index39 alt1">40</div>
+<div class="line number41 index40 alt2">41</div>
+<div class="line number42 index41 alt1">42</div>
+<div class="line number43 index42 alt2">43</div>
+<div class="line number44 index43 alt1">44</div>
+<div class="line number45 index44 alt2">45</div>
+<div class="line number46 index45 alt1">46</div>
+<div class="line number47 index46 alt2">47</div>
+<div class="line number48 index47 alt1">48</div>
+<div class="line number49 index48 alt2">49</div>
+<div class="line number50 index49 alt1">50</div>
+<div class="line number51 index50 alt2">51</div>
+<div class="line number52 index51 alt1">52</div>
+<div class="line number53 index52 alt2">53</div>
+<div class="line number54 index53 alt1">54</div>
+<div class="line number55 index54 alt2">55</div>
+<div class="line number56 index55 alt1">56</div>
+<div class="line number57 index56 alt2">57</div>
+<div class="line number58 index57 alt1">58</div>
+<div class="line number59 index58 alt2">59</div>
+<div class="line number60 index59 alt1">60</div>
+<div class="line number61 index60 alt2">61</div>
+<div class="line number62 index61 alt1">62</div>
+<div class="line number63 index62 alt2">63</div>
+<div class="line number64 index63 alt1">64</div>
+<div class="line number65 index64 alt2">65</div>
+<div class="line number66 index65 alt1">66</div>
+<div class="line number67 index66 alt2">67</div>
+<div class="line number68 index67 alt1">68</div>
+<div class="line number69 index68 alt2">69</div>
+<div class="line number70 index69 alt1">70</div>
+<div class="line number71 index70 alt2">71</div>
+<div class="line number72 index71 alt1">72</div>
+<div class="line number73 index72 alt2">73</div>
+<div class="line number74 index73 alt1">74</div>
+<div class="line number75 index74 alt2">75</div>
+<div class="line number76 index75 alt1">76</div>
+<div class="line number77 index76 alt2">77</div>
+<div class="line number78 index77 alt1">78</div>
+<div class="line number79 index78 alt2">79</div>
+<div class="line number80 index79 alt1">80</div>
+<div class="line number81 index80 alt2">81</div>
+<div class="line number82 index81 alt1">82</div>
+<div class="line number83 index82 alt2">83</div>
+<div class="line number84 index83 alt1">84</div>
+<div class="line number85 index84 alt2">85</div>
+<div class="line number86 index85 alt1">86</div>
+<div class="line number87 index86 alt2">87</div>
+<div class="line number88 index87 alt1">88</div>
+<div class="line number89 index88 alt2">89</div>
+<div class="line number90 index89 alt1">90</div>
+<div class="line number91 index90 alt2">91</div>
+<div class="line number92 index91 alt1">92</div>
+<div class="line number93 index92 alt2">93</div>
+<div class="line number94 index93 alt1">94</div>
+<div class="line number95 index94 alt2">95</div>
+<div class="line number96 index95 alt1">96</div>
+<div class="line number97 index96 alt2">97</div>
+<div class="line number98 index97 alt1">98</div>
+<div class="line number99 index98 alt2">99</div>
+<div class="line number100 index99 alt1">100</div>
+<div class="line number101 index100 alt2">101</div>
+<div class="line number102 index101 alt1">102</div>
+<div class="line number103 index102 alt2">103</div>
+<div class="line number104 index103 alt1">104</div>
+<div class="line number105 index104 alt2">105</div>
+<div class="line number106 index105 alt1">106</div>
+<div class="line number107 index106 alt2">107</div>
+<div class="line number108 index107 alt1">108</div>
+<div class="line number109 index108 alt2">109</div>
+<div class="line number110 index109 alt1">110</div>
+<div class="line number111 index110 alt2">111</div>
+<div class="line number112 index111 alt1">112</div>
+<div class="line number113 index112 alt2">113</div>
+<div class="line number114 index113 alt1">114</div>
+<div class="line number115 index114 alt2">115</div>
+<div class="line number116 index115 alt1">116</div>
+<div class="line number117 index116 alt2">117</div>
+<div class="line number118 index117 alt1">118</div>
+<div class="line number119 index118 alt2">119</div>
+<div class="line number120 index119 alt1">120</div>
+<div class="line number121 index120 alt2">121</div>
+<div class="line number122 index121 alt1">122</div>
+<div class="line number123 index122 alt2">123</div>
+<div class="line number124 index123 alt1">124</div>
+<div class="line number125 index124 alt2">125</div>
+<div class="line number126 index125 alt1">126</div>
+<div class="line number127 index126 alt2">127</div>
+<div class="line number128 index127 alt1">128</div>
+<div class="line number129 index128 alt2">129</div>
+<div class="line number130 index129 alt1">130</div>
+<div class="line number131 index130 alt2">131</div>
+<div class="line number132 index131 alt1">132</div>
+<div class="line number133 index132 alt2">133</div>
+<div class="line number134 index133 alt1">134</div>
+<div class="line number135 index134 alt2">135</div>
+<div class="line number136 index135 alt1">136</div>
+<div class="line number137 index136 alt2">137</div>
+<div class="line number138 index137 alt1">138</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="cpp preprocessor">#include &lt;stdio.h&gt;</code></div>
+<div class="line number2 index1 alt1"><code class="cpp preprocessor">#include &lt;gd.h&gt;</code></div>
+<div class="line number3 index2 alt2"><code class="cpp preprocessor">#include &lt;math.h&gt;</code></div>
+<div class="line number4 index3 alt1"> </div>
+<div class="line number5 index4 alt2"><code class="cpp keyword bold">void</code><span> </span><code class="cpp plain">draw_uk_flag(gdImagePtr img);</code></div>
+<div class="line number6 index5 alt1"><code class="cpp keyword bold">void</code><span> </span><code class="cpp plain">fillTriangle(gdImagePtr img,<span> </span></code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">x1,<span> </span></code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">y1,<span> </span></code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">x2,<span> </span></code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">y2,<span> </span></code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">x3,<span> </span></code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">y3,<span> </span></code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">color);</code></div>
+<div class="line number7 index6 alt2"> </div>
+<div class="line number8 index7 alt1"><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">main() {</code></div>
+<div class="line number9 index8 alt2"><code class="cpp spaces">    </code><code class="cpp comments">// 设置国旗的宽和高</code></div>
+<div class="line number10 index9 alt1"><code class="cpp spaces">    </code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">width = 1200;</code></div>
+<div class="line number11 index10 alt2"><code class="cpp spaces">    </code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">height = width / 2;</code></div>
+<div class="line number12 index11 alt1"> </div>
+<div class="line number13 index12 alt2"><code class="cpp spaces">    </code><code class="cpp comments">// 创建图像</code></div>
+<div class="line number14 index13 alt1"><code class="cpp spaces">    </code><code class="cpp plain">gdImagePtr img = gdImageCreateTrueColor(width, height);</code></div>
+<div class="line number15 index14 alt2"><code class="cpp spaces">    </code><code class="cpp plain">gdImageAlphaBlending(img, 0);</code></div>
+<div class="line number16 index15 alt1"> </div>
+<div class="line number17 index16 alt2"><code class="cpp spaces">    </code><code class="cpp comments">// 绘制英国国旗</code></div>
+<div class="line number18 index17 alt1"><code class="cpp spaces">    </code><code class="cpp plain">draw_uk_flag(img);</code></div>
+<div class="line number19 index18 alt2"> </div>
+<div class="line number20 index19 alt1"><code class="cpp spaces">    </code><code class="cpp comments">// 将图像保存到文件</code></div>
+<div class="line number21 index20 alt2"><code class="cpp spaces">    </code><code class="cpp color1 bold">FILE</code><span> </span><code class="cpp plain">*outputFile =<span> </span></code><code class="cpp functions bold">fopen</code><code class="cpp plain">(</code><code class="cpp string">"./../images/uk_flag.png"</code><code class="cpp plain">,<span> </span></code><code class="cpp string">"wb"</code><code class="cpp plain">);</code></div>
+<div class="line number22 index21 alt1"><code class="cpp spaces">    </code><code class="cpp keyword bold">if</code><span> </span><code class="cpp plain">(outputFile == NULL) {</code></div>
+<div class="line number23 index22 alt2"><code class="cpp spaces">        </code><code class="cpp functions bold">fprintf</code><code class="cpp plain">(stderr,<span> </span></code><code class="cpp string">"打开输出文件时发生错误。\n"</code><code class="cpp plain">);</code></div>
+<div class="line number24 index23 alt1"><code class="cpp spaces">        </code><code class="cpp keyword bold">return</code><span> </span><code class="cpp plain">1;</code></div>
+<div class="line number25 index24 alt2"><code class="cpp spaces">    </code><code class="cpp plain">}</code></div>
+<div class="line number26 index25 alt1"><code class="cpp spaces">    </code><code class="cpp plain">gdImagePngEx(img, outputFile, 9);</code></div>
+<div class="line number27 index26 alt2"><code class="cpp spaces">    </code><code class="cpp functions bold">fclose</code><code class="cpp plain">(outputFile);</code></div>
+<div class="line number28 index27 alt1"><code class="cpp spaces">    </code><code class="cpp plain">gdImageDestroy(img);</code></div>
+<div class="line number29 index28 alt2"><code class="cpp spaces">    </code><code class="cpp keyword bold">return</code><span> </span><code class="cpp plain">0;</code></div>
+<div class="line number30 index29 alt1"><code class="cpp plain">}</code></div>
+<div class="line number31 index30 alt2"> </div>
+<div class="line number32 index31 alt1"> </div>
+<div class="line number33 index32 alt2"> </div>
+<div class="line number34 index33 alt1"><code class="cpp keyword bold">void</code><span> </span><code class="cpp plain">draw_uk_flag(gdImagePtr img) {</code></div>
+<div class="line number35 index34 alt2"><code class="cpp spaces">    </code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">width = gdImageSX(img);</code></div>
+<div class="line number36 index35 alt1"><code class="cpp spaces">    </code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">height = gdImageSY(img);</code></div>
+<div class="line number37 index36 alt2"> </div>
+<div class="line number38 index37 alt1"><code class="cpp spaces">    </code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">red, white, blue;</code></div>
+<div class="line number39 index38 alt2"><code class="cpp spaces">    </code><code class="cpp plain">red = gdImageColorAllocate(img, 204, 0, 0);      <span> </span></code><code class="cpp comments">// 红色</code></div>
+<div class="line number40 index39 alt1"><code class="cpp spaces">    </code><code class="cpp plain">white = gdImageColorAllocate(img, 255, 255, 255);<span> </span></code><code class="cpp comments">// 白色</code></div>
+<div class="line number41 index40 alt2"><code class="cpp spaces">    </code><code class="cpp plain">blue = gdImageColorAllocate(img, 0, 0, 153);     <span> </span></code><code class="cpp comments">// 蓝色</code></div>
+<div class="line number42 index41 alt1"> </div>
+<div class="line number43 index42 alt2"><code class="cpp spaces">    </code><code class="cpp plain">gdImageFilledRectangle(img, 0, 0, width, height, blue);</code></div>
+<div class="line number44 index43 alt1"> </div>
+<div class="line number45 index44 alt2"> </div>
+<div class="line number46 index45 alt1"><code class="cpp spaces">  </code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">x1, y1, x2, y2, x3, y3;</code></div>
+<div class="line number47 index46 alt2"><code class="cpp spaces">  </code><code class="cpp plain">{</code></div>
+<div class="line number48 index47 alt1"><code class="cpp spaces">    </code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">line_thickness = 100;</code></div>
+<div class="line number49 index48 alt2"><code class="cpp spaces">    </code><code class="cpp plain">gdImageSetThickness(img, line_thickness);</code></div>
+<div class="line number50 index49 alt1"> </div>
+<div class="line number51 index50 alt2"><code class="cpp spaces">    </code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">x1, y1, x2, y2, x3, y3;</code></div>
+<div class="line number52 index51 alt1"> </div>
+<div class="line number53 index52 alt2"><code class="cpp spaces">    </code><code class="cpp comments">// 绘制白色斜线</code></div>
+<div class="line number54 index53 alt1"><code class="cpp spaces">    </code><code class="cpp plain">x1 = 0;</code></div>
+<div class="line number55 index54 alt2"><code class="cpp spaces">    </code><code class="cpp plain">y1 = 600;</code></div>
+<div class="line number56 index55 alt1"><code class="cpp spaces">    </code><code class="cpp plain">x2 = 1200;</code></div>
+<div class="line number57 index56 alt2"><code class="cpp spaces">    </code><code class="cpp plain">y2 = 0;</code></div>
+<div class="line number58 index57 alt1"><code class="cpp spaces">    </code><code class="cpp plain">gdImageLine(img, x1, y1, x2, y2, white);</code></div>
+<div class="line number59 index58 alt2"> </div>
+<div class="line number60 index59 alt1"><code class="cpp spaces">    </code><code class="cpp plain">x1 = 0;</code></div>
+<div class="line number61 index60 alt2"><code class="cpp spaces">    </code><code class="cpp plain">y1 = 0;</code></div>
+<div class="line number62 index61 alt1"><code class="cpp spaces">    </code><code class="cpp plain">x2 = 1200;</code></div>
+<div class="line number63 index62 alt2"><code class="cpp spaces">    </code><code class="cpp plain">y2 = 600;</code></div>
+<div class="line number64 index63 alt1"><code class="cpp spaces">    </code><code class="cpp plain">gdImageLine(img, x1, y1, x2, y2, white);</code></div>
+<div class="line number65 index64 alt2"><code class="cpp plain">}</code></div>
+<div class="line number66 index65 alt1"><code class="cpp spaces">  </code><code class="cpp plain">{</code></div>
+<div class="line number67 index66 alt2"><code class="cpp spaces">    </code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">line_thickness = 33;</code></div>
+<div class="line number68 index67 alt1"><code class="cpp spaces">    </code><code class="cpp plain">gdImageSetThickness(img, line_thickness);</code></div>
+<div class="line number69 index68 alt2"> </div>
+<div class="line number70 index69 alt1"> </div>
+<div class="line number71 index70 alt2"><code class="cpp spaces">    </code><code class="cpp comments">// 绘制红色斜线</code></div>
+<div class="line number72 index71 alt1"><code class="cpp spaces">    </code><code class="cpp plain">x1 = 566;</code></div>
+<div class="line number73 index72 alt2"><code class="cpp spaces">    </code><code class="cpp plain">y1 = 300;</code></div>
+<div class="line number74 index73 alt1"><code class="cpp spaces">    </code><code class="cpp plain">x2 = 1166;</code></div>
+<div class="line number75 index74 alt2"><code class="cpp spaces">    </code><code class="cpp plain">y2 = 0;</code></div>
+<div class="line number76 index75 alt1"><code class="cpp spaces">    </code><code class="cpp plain">gdImageLine(img, x1, y1, x2, y2, red);</code></div>
+<div class="line number77 index76 alt2"> </div>
+<div class="line number78 index77 alt1"><code class="cpp spaces">    </code><code class="cpp plain">x1 = 1233;</code></div>
+<div class="line number79 index78 alt2"><code class="cpp spaces">    </code><code class="cpp plain">y1 = 600;</code></div>
+<div class="line number80 index79 alt1"><code class="cpp spaces">    </code><code class="cpp plain">x2 = 633;</code></div>
+<div class="line number81 index80 alt2"><code class="cpp spaces">    </code><code class="cpp plain">y2 = 300;</code></div>
+<div class="line number82 index81 alt1"><code class="cpp spaces">    </code><code class="cpp plain">gdImageLine(img, x1, y1, x2, y2, red);</code></div>
+<div class="line number83 index82 alt2"> </div>
+<div class="line number84 index83 alt1"><code class="cpp spaces">    </code><code class="cpp plain">x1 = 566;</code></div>
+<div class="line number85 index84 alt2"><code class="cpp spaces">    </code><code class="cpp plain">y1 = 300;</code></div>
+<div class="line number86 index85 alt1"><code class="cpp spaces">    </code><code class="cpp plain">x2 = -33;</code></div>
+<div class="line number87 index86 alt2"><code class="cpp spaces">    </code><code class="cpp plain">y2 = 0;</code></div>
+<div class="line number88 index87 alt1"><code class="cpp spaces">    </code><code class="cpp plain">gdImageLine(img, x1, y1, x2, y2, red);</code></div>
+<div class="line number89 index88 alt2"> </div>
+<div class="line number90 index89 alt1"><code class="cpp spaces">    </code><code class="cpp plain">x1 = 600;</code></div>
+<div class="line number91 index90 alt2"><code class="cpp spaces">    </code><code class="cpp plain">y1 = 316.5;</code></div>
+<div class="line number92 index91 alt1"><code class="cpp spaces">    </code><code class="cpp plain">x2 = 0;</code></div>
+<div class="line number93 index92 alt2"><code class="cpp spaces">    </code><code class="cpp plain">y2 = 616.5;</code></div>
+<div class="line number94 index93 alt1"><code class="cpp spaces">    </code><code class="cpp plain">gdImageLine(img, x1, y1, x2, y2, red);</code></div>
+<div class="line number95 index94 alt2"><code class="cpp spaces">  </code><code class="cpp plain">}</code></div>
+<div class="line number96 index95 alt1"><code class="cpp spaces">  </code><code class="cpp plain">{</code></div>
+<div class="line number97 index96 alt2"><code class="cpp spaces">  </code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">line_thickness = 33;</code></div>
+<div class="line number98 index97 alt1"><code class="cpp spaces">  </code><code class="cpp plain">gdImageSetThickness(img, line_thickness);</code></div>
+<div class="line number99 index98 alt2"> </div>
+<div class="line number100 index99 alt1"><code class="cpp spaces">  </code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">x1, y1, x2, y2, x3, y3;</code></div>
+<div class="line number101 index100 alt2"> </div>
+<div class="line number102 index101 alt1"><code class="cpp spaces">  </code><code class="cpp comments">// 绘制  斜线</code></div>
+<div class="line number103 index102 alt2"><code class="cpp spaces">  </code><code class="cpp plain">x1 = 0;</code></div>
+<div class="line number104 index103 alt1"><code class="cpp spaces">  </code><code class="cpp plain">y1 = 600;</code></div>
+<div class="line number105 index104 alt2"><code class="cpp spaces">  </code><code class="cpp plain">x2 = 1200;</code></div>
+<div class="line number106 index105 alt1"><code class="cpp spaces">  </code><code class="cpp plain">y2 = 0;</code></div>
+<div class="line number107 index106 alt2"><code class="cpp spaces">  </code><code class="cpp plain">gdImageLine(img, x1, y1, x2, y2, red );</code></div>
+<div class="line number108 index107 alt1"> </div>
+<div class="line number109 index108 alt2"> </div>
+<div class="line number110 index109 alt1"><code class="cpp spaces">  </code><code class="cpp plain">x1 = 1200;</code></div>
+<div class="line number111 index110 alt2"><code class="cpp spaces">    </code><code class="cpp plain">y1 = 16.5;</code></div>
+<div class="line number112 index111 alt1"><code class="cpp spaces">    </code><code class="cpp plain">x2 = 600;</code></div>
+<div class="line number113 index112 alt2"><code class="cpp spaces">    </code><code class="cpp plain">y2 = 316.5;</code></div>
+<div class="line number114 index113 alt1"><code class="cpp spaces">    </code><code class="cpp plain">gdImageLine(img, x1, y1, x2, y2, white);</code></div>
+<div class="line number115 index114 alt2"> </div>
+<div class="line number116 index115 alt1"> </div>
+<div class="line number117 index116 alt2"><code class="cpp spaces">  </code><code class="cpp plain">x1 = 0;</code></div>
+<div class="line number118 index117 alt1"><code class="cpp spaces">    </code><code class="cpp plain">y1 = 583.5;</code></div>
+<div class="line number119 index118 alt2"><code class="cpp spaces">    </code><code class="cpp plain">x2 = 600;</code></div>
+<div class="line number120 index119 alt1"><code class="cpp spaces">    </code><code class="cpp plain">y2 = 283.5;</code></div>
+<div class="line number121 index120 alt2"><code class="cpp spaces">    </code><code class="cpp plain">gdImageLine(img, x1, y1, x2, y2, white);</code></div>
+<div class="line number122 index121 alt1"> </div>
+<div class="line number123 index122 alt2"> </div>
+<div class="line number124 index123 alt1"><code class="cpp spaces">  </code><code class="cpp plain">}</code></div>
+<div class="line number125 index124 alt2"> </div>
+<div class="line number126 index125 alt1"><code class="cpp spaces">    </code><code class="cpp comments">// 绘制白色十字</code></div>
+<div class="line number127 index126 alt2"><code class="cpp spaces">    </code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">cross_width = width / 32;</code></div>
+<div class="line number128 index127 alt1"><code class="cpp spaces">    </code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">cross_arm_width = width / 32;</code></div>
+<div class="line number129 index128 alt2"><code class="cpp spaces">    </code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">center_x = width / 2;</code></div>
+<div class="line number130 index129 alt1"><code class="cpp spaces">    </code><code class="cpp color1 bold">int</code><span> </span><code class="cpp plain">center_y = height / 2;</code></div>
+<div class="line number131 index130 alt2"> </div>
+<div class="line number132 index131 alt1"><code class="cpp spaces">    </code><code class="cpp plain">gdImageFilledRectangle(img, center_x + 2.7 * cross_width, 0, center_x - 2.7 * cross_width, height, white);</code></div>
+<div class="line number133 index132 alt2"><code class="cpp spaces">    </code><code class="cpp plain">gdImageFilledRectangle(img, 0, center_y + 2.7 * cross_arm_width, width, center_y - 2.7 * cross_arm_width, white);</code></div>
+<div class="line number134 index133 alt1"> </div>
+<div class="line number135 index134 alt2"><code class="cpp spaces">    </code><code class="cpp comments">// 绘制红色十字</code></div>
+<div class="line number136 index135 alt1"><code class="cpp spaces">    </code><code class="cpp plain">gdImageFilledRectangle(img, center_x + 1.5 * cross_width, 0, center_x - 1.5 * cross_width, height, red);</code></div>
+<div class="line number137 index136 alt2"><code class="cpp spaces">    </code><code class="cpp plain">gdImageFilledRectangle(img, 0, center_y + 1.5 * cross_arm_width, width, center_y - 1.5 * cross_arm_width, red);</code></div>
+<div class="line number138 index137 alt1"><code class="cpp plain">}</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><span><img alt="" height="200" src="https://spirit0224.github.io/cp2023/images/uk_flag.png" width="400"/></span></p>
+<br />中國國旗 << <a href='中國國旗.html'>Previous</a> <a href='韓國國旗.html'>Next</a> >> 韓國國旗</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
